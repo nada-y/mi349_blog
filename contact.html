@@ -24,7 +24,28 @@
     
     </header>
 
+    <section>
     <h2> Contact US</h2>
-    
-</body>
+    <form>
+        <label>Name:</label>
+        <input type="text">
+        
+        <label>Email address:</label>
+        <input type="email">
+        
+        <label for="reason">Reason for contact:</label>
+        <select id="reason" name="reason" required>
+        <option value="">-- Please choose an option --</option>
+        <option value="saying-hi">Saying hi</option>
+        <option value="looking-for-contractor">Looking for a contractor</option>
+        <option value="interested-in-interview">Interested in an interview</option>
+      </select>
+
+      <label for="message">Comment:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    </section>
+    </body>
 </html>
