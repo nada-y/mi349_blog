@@ -27,32 +27,26 @@
     <section>
     <h2> Contact US</h2>
     <form name="contact" method="POST" data-netlify="true">
-        
-        <input type="hidden" name="form-name" value="contact">
-
-        <label>Name:</label>
-        <input type="text" name="name">
-        
-        
-        <label>Email address:</label>
-        <input type="email" name="email">
-        
-        
-        <label for="reason">Reason for contact:</label>
-        <select id="reason" name="reason" required>
-        <option value="">-- Please choose an option --</option>
-        <option value="saying-hi">Saying hi</option>
-        <option value="looking-for-contractor">Looking for a contractor</option>
-        <option value="interested-in-interview">Interested in an interview</option>
-      </select>
-        
-
-      <label for="message">Comment:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-       
-
-      <button type="submit">Submit</button>
-    </form>
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="Saying-hi</">Saying hi</</option>
+      <option value="Looking-for-a-contractor">Looking for a contractor</option>
+      <option value="Interested-in-an-interview">Interested in an interview</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
     </section>
     </body>
 </html>
