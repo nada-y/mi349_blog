@@ -31,6 +31,12 @@ p {
   line-height: 1.4em;
 }
 
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+
 
 
 #blog {
