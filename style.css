@@ -50,6 +50,33 @@ article::after {
   clear: both;
 }
 
+#blog > h2 {
+  flex: 0 0 100%;
+  margin: 16px 20px;
+}
+
+
+section, article, table, th, td {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+
+
+
 article:nth-of-type(1){
   flex: 1;
 }
@@ -171,6 +198,7 @@ article {
 
 /* ---- @media 1: phones (≤600px) ---- */
 @media screen and (max-width: 600px) {
+  body { margin: 12px; padding: 12px; }
   section { display: block; }                               
   article { margin: 16px 12px; padding: 16px; }            
   html { font-size: 17px; }                                
