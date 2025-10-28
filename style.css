@@ -89,6 +89,11 @@ img {
 
 }
 
+#blog > h2 {
+  flex: 0 0 100%;
+  margin: 16px 20px;
+}
+
 .blog-post {
 
   border-bottom: 1px dotted lightgray;
@@ -155,7 +160,7 @@ a:focus-visible {
 
 section { display: flex; gap: 20px; flex-wrap: wrap; }
 article {
-  margin: 20px;
+  margin: 0;
   padding: 20px;
   background: #fff;
   border-radius: 6px;
