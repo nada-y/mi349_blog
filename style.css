@@ -40,8 +40,12 @@ section{
 
 article {
 
+  margin: 0;                
   padding: 20px;
-  margin: 20px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  min-width: 0;
 }
 
 article::after {
@@ -121,6 +125,7 @@ img {
 .blog-post {
 
   border-bottom: 1px dotted lightgray;
+  display: flow-root; 
 
 
 }
