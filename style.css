@@ -70,9 +70,12 @@ img {
 
   float: right;
   margin-left: 10px;
-
-
+width: clamp(180px, 40%, 320px);
+  margin-left: 12px;
+  margin-bottom: 8px;
 }
+
+
 
 
 
@@ -154,7 +157,8 @@ article {
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0,0,0,.06);
 }
-.img-container { float: right; margin: 0 0 1rem 1rem; }
+.img-container 
+{ float: right; margin: 0 0 1rem 1rem; }
 .sticky { position: sticky; top: 0; z-index: 10; }
 
 
