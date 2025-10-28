@@ -44,6 +44,12 @@ article {
   margin: 20px;
 }
 
+article::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 article:nth-of-type(1){
   flex: 1;
 }
@@ -68,11 +74,9 @@ img {
 
 .img-container{
 
-  float: right;
-  margin-left: 10px;
-width: clamp(180px, 40%, 320px);
-  margin-left: 12px;
-  margin-bottom: 8px;
+ float: right;
+  width: clamp(180px, 40%, 320px); 
+  margin: 0 0 8px 12px;
 }
 
 
@@ -157,8 +161,7 @@ article {
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0,0,0,.06);
 }
-.img-container 
-{ float: right; margin: 0 0 1rem 1rem; }
+
 .sticky { position: sticky; top: 0; z-index: 10; }
 
 
@@ -170,7 +173,11 @@ article {
   article { margin: 16px 12px; padding: 16px; }            
   html { font-size: 17px; }                                
   h1 { font-size: 2rem; }
-  .img-container { float: none; margin: 0 0 12px 0; }       
+  .img-container { 
+    float: none; 
+     width: 100%;
+    margin: 0 0 12px 0; 
+  }       
 
 
   /*  header/nav*/
